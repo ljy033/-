@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.title{background-color: grey;color: white;font-size: 20px;text-align: center;padding:1px;}
+ul{list-style-type: none;}
+.daohang ul{overflow: hidden;background-color: #333;padding: 0;margin: 0;}
+.daohang li{float: left;color: white;text-align: center;padding: 14px 16px;text-decoration:none;}
+.daohang li:hover{background-color:red;}
+.C{float:left;padding: 10px;background-color: #ffffff;}
+.menu li{padding:10px;margin-bottom: 8px;background-color:#33b5e5;color:#ffffff;font-size: larger;}
+.content{overflow-x: scroll;width: 65%;height:200px;text-align: center;}
+.menu{width:30%;text-align: center;}
+h2{font-size: 35px;}
+.footer{background-color: grey;padding: 15px;color: white;font-size: larger;font-weight: 400;}
+    </style>
+</head>
+<body>
+    <div class="title">
+        <h1>Chania</h1>
+    </div>
+    <div>
+    <div class="daohang">
+    <ul>
+        <li><a href="#home" class="home"></a>Home</li>
+        <li><a href="#news"></a>News</li>
+        <li><a href="#contact"></a>Contact</li>
+        <li><a href="#about"></a>About</li>
+    </ul>
+    </div>
+    <div class="C">
+    <div class="C menu">
+        <ul>
+            <li>The Flight</li>
+            <li>The City</li>
+            <li>The Island</li>
+            <li>The Food</li>
+        </ul>
+    </div>
+    <div class="C content">
+        <h2 style="text-align: center;">The city</h2>
+        <p style="font-size: 13px;font-weight: 700;">China is the capital of the chania region on the island of the Crete CSS overflow 属性控制内容太多而无法放入区域的内容会发生什么情况。
+            overflow 属性指明应裁剪展现内容还是在元素内容太多而无法放入指定区域时添加滚动条。
+            overflow 属性具有以下值：
+            visible - Default.溢出不裁剪。多出内容呈现在元素框外
+            hidden -溢出被裁剪，多出内容将不可见
+            scroll -只显示当前区域能够显示的内容，并添加一个滚动条，以查看内容的其余部分
+            auto -类似于scroll，但它仅在必要时添加滚动条overflow 属性仅适用于具有指定高度的块元素。
+            在OS X Lion (on Mac)系统中，默认情况下滚动栏是隐藏的，并且仅在使用时显示(即使设定了"overflow:scroll").            
+            </p>
+    </div>
+</div>
+<div style="clear: both;"></div>
+   <div class="footer">
+ <p>Footer test</p>
+</div>
+</body>
+</html>
