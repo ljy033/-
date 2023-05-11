@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+body{background-image: url(背景.jpg);background-size: 100%;background-repeat: no-repeat;}
+ul{
+    list-style-type: none;
+}
+li{float: left;
+    font-size: 17px;
+}
+li[class=name]{
+    padding-right: 30px;
+    padding-top: 9px;
+    padding-left:2px;
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:rgb(4, 47, 122);
+}
+li a {
+    display: block;
+    padding: 10px;
+}
+img{
+    opacity: 0.3;
+    margin-left: auto;
+    margin-right: auto;
+}
+img:hover{
+    opacity: 1;
+}
+.dropbtn{
+    font-size: 17px;
+    text-align: center;
+    line-height:44px;
+    display: inline-block;
+    margin: auto;
+    padding-left: 10px;
+
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a{
+    display: block;
+    text-decoration: none;
+    padding: 12px 16px; 
+}
+.dropdown-content a:hover{background-color: #f1f1f1;}
+.dropdown:hover .dropdown-content{display: block;}
+.dropdown:hover .dropbtn{
+    background-color: #3e8e41;
+}
+input[name=search]{
+    width: 40%;
+    height:40px;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid whitesmoke;
+    transition:width 1s ease-in-out;
+    background-image: url('search.jpg');
+    background-position: left top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 200px;
+    margin-left:25%;
+}
+input[name=search]:focus{
+    height: 100px;
+}
+input[name=button]{
+   border:1px solid black;
+   color:black;
+   background-color: whitesmoke;
+   padding:8px 16px;
+   margin: 2px 2px;
+   cursor:pointer;
+   font-size: 15px;
+   font-family:Arial, Helvetica, sans-serif;
+   border-radius: 19px; 
+}
+.button{
+    padding:10px 48%;
+}  
+</style>
+</head>
+<body>
+    <div class="title">
+    <ul class="title">
+        <li><img src="Baidu.jpg" alt="图标" width="40px" height="40px" name="tubiao"></li>
+        <li class="name">百度搜索</li>
+        <li><a href="HOME">Home</a></li>
+        <li><a href="NEWS">News</a></li>
+        <li><a href="WEATHER">Weather</a></li>
+    </ul>
+   <div class="dropdown">
+  <span class="dropbtn">More</span>
+  <div class="dropdown-content">
+<a href="#picture">Picture</a>
+<a href="#video">Video</a>
+   </div>
+  </div>  
+</div>
+<input type="text" size="60" name="search">
+<br>
+<div class="button">
+<input type="button" value="search" name="button">
+</div>
+</body>
+</html>
